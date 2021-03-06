@@ -1,0 +1,41 @@
+﻿@model Web_Shop.Models.BusinessModel
+@{
+    ViewBag.Title = "AllGoods";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>AllGoods</h1>
+
+<table class="table table-bordered">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.IsOk)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.BuyDescription)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Group)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Price)
+        </th>
+        <th></th>
+    </tr>
+    <tr>
+        <td>
+            @Html.DisplayFor(model => model.IsOk)
+        </td>
+        <td>
+            @Html.DisplayFor(model => model.BuyDescription)
+        </td>
+        <td>
+            @Html.DisplayFor(model => model.Group)
+        </td>
+        <td>
+            @Html.DisplayFor(model => model.Price)
+        </td>
+        <td></td>
+    </tr>
+
+</table>
